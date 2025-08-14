@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nkokheli Creatives</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-image: url(https://i.postimg.cc/NMNtssmS/Untitled-design-1.png);
+      }
+      .bg-custom-dark {
+        background-color: #1a1a1a;
+      }
+      .text-custom-orange {
+        color: #d9534f;
+      }
+     
+          .hero-background {
+            background-image: url('https://i.postimg.cc/Kv9fcYG7/Untitled-design-8.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+  </head>
+  <body class="bg-custom-dark text-white">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-gray-900 bg-opacity-90 py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- The logo now includes both the image and the text, aligned with flexbox -->
+            <a href="#" class="text-3xl font-extrabold text-white flex items-center gap-2">
+                <img
+                    src="https://i.postimg.cc/Bbb3r6ZY/NC-Logo2-TEXTURED3.jpg"
+                    alt="Nkokheli Creatives Logo"
+                    class="w-10 h-auto"
+                />
+                Nkokheli Creatives
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a
+                    href="#about"
+                    class="text-gray-300 hover:text-custom-orange transition-colors"
+                    >About</a
+                >
+                <a
+                    href="#services"
+                    class="text-gray-300 hover:text-custom-orange transition-colors"
+                    >Services</a
+                >
+                <a
+                    href="#portfolio"
+                    class="text-gray-300 hover:text-custom-orange transition-colors"
+                    >Portfolio</a
+                >
+                <a
+                    href="#contact"
+                    class="text-gray-300 hover:text-custom-orange transition-colors"
+                    >Contact</a
+                >
+            </div>
+            <button class="md:hidden text-gray-300 focus:outline-none">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-menu"
+                >
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header id="hero" class="hero-background flex items-center justify-center min-h-screen pt-16">
+        <div class="text-center p-8 bg-black bg-opacity-50 rounded-xl max-w-2xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">
+                Creative Solutions for Modern Brands
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                We craft compelling narratives and stunning visuals that drive engagement and growth.
+            </p>
+            <a href="#contact" class="bg-custom-orange text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-orange-600 transition-colors">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- The original section with added triangle image
+    <section id="about" class="py-16 md:py-24 relative overflow-hidden">
+        <div class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-xl relative">
+            The triangle image, positioned absolutely on the top-right
+            <img
+                src="https://i.postimg.cc/L5cLWMCg/Untitled-design-removebg-preview.png"
+                alt="Decorative triangle"
+                class="absolute top-0 right-0 w-12 h-auto"
+            />
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12">
+                    <h2 class="text-4xl font-bold mb-4">About Our Company</h2>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        We are <span style="color: #473915; font-weight: bold;">Nkokheli Creatives</span>, a catalyst creative agency that continues to
+                        constructively push the boundaries and create conducive
+                        platforms that aid in the amelioration of youth unemployment in
+                        South Africa.
+                    </p>
+                    <p class="mt-4 text-gray-300 leading-relaxed text-lg">
+                        We are a comprehensive multi-media solutions company that works
+                        closely with our clients from the initial analysis and strategy
+                        formulation to the final implementation.
+                    </p>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img
+                        src="https://placehold.co/600x400/1e1e1e/d9534f?text=About+Image"
+                        alt="Creative team collaborating"
+                        class="w-full rounded-xl shadow-lg"
+                    />
+                </div>
+            </div>
+        </div>
+    </section> -->
+      <!-- About Section -->
+      <section id="about" class="py-16 md:py-24">
+        <div class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-xl">
+          <div class="absolute top-0 right-0 w-0 h-0 triangle-top-right"></div>
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-12">
+              <h2
+                class="text-4xl font-bold mb-4"
+                style="color: #473915; font-weight: bold"
+              >
+                About Our Company
+              </h2>
+
+              <p class="text-gray-300 leading-relaxed text-lg">
+                Founded in 2014 in Johannesburg, South Africa, Nkokheli
+                Creatives is a catalyst creative agency that continues to
+                constructively push the boundaries and create conducive
+                platforms that aid in the amelioration of youth unemployment in
+                South Africa.
+              </p>
+              <p class="mt-4 text-gray-300 leading-relaxed text-lg">
+                We are a comprehensive multi-media solutions company that works
+                closely with our clients from the initial analysis and strategy
+                formulation to the final implementation.
+              </p>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+              <img
+                src="https://i.postimg.cc/HnchqXmZ/NC-Logo2-TEXTURED-1.jpg"
+                alt="Creative team collaborating"
+                class="w-full rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-16 md:py-24">
+        <h2
+          class="text-4xl font-bold text-center mb-12"
+          style="color: #473915; font-weight: bold"
+        >
+          Our Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card -->
+          <div
+            class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-custom-orange mb-2">
+              Multi-Media / Audio Visual
+            </h3>
+            <p class="text-gray-400">
+              From concept to execution, we create compelling visual and audio
+              content.
+            </p>
+            <div class="md:w1 mt-8 md:mt-5">
+              <img
+                src="https://i.postimg.cc/JzHDghST/multim.png"
+                alt="Creative team collaborating"
+                class="w-full rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-custom-orange mb-2">
+              Events Management
+            </h3>
+            <p class="text-gray-400">
+              Seamlessly plan and execute events that leave a lasting
+              impression.
+            </p>
+            <div class="md:w1 mt-8 md:mt-5">
+              <img
+                src="https://i.postimg.cc/SRKjGQWf/events.png"
+                alt="Creative team collaborating"
+                class="w-full rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-custom-orange mb-2">
+              Graphic Design
+            </h3>
+            <p class="text-gray-400">
+              Crafting stunning visual identities, from logos to full branding
+              packages.
+            </p>
+            <div class="md:w1 mt-8 md:mt-5">
+              <img
+                src="https://i.postimg.cc/MT2kz9Pk/graphic.png"
+                alt="Creative team collaborating"
+                class="w-full rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-custom-orange mb-2">
+              Printing Services
+            </h3>
+            <p class="text-gray-400">
+              High-quality printing solutions for all your marketing and
+              promotional needs.
+            </p>
+            <div class="md:w1 mt-8 md:mt-5">
+              <img
+                src="https://i.postimg.cc/pryXFGH0/print.png"
+                alt="Creative team collaborating"
+                class="w-full rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-custom-orange mb-2">
+              Content Creation
+            </h3>
+            <p class="text-gray-400">
+              Developing engaging written, visual, and audio content for any
+              platform.
+            </p>
+            <div class="md:w1 mt-8 md:mt-5">
+              <img
+                src="https://i.postimg.cc/QMbXnGN4/content.png"
+                alt="Creative team collaborating"
+                class="w-full rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-custom-orange mb-2">
+              Digital Strategy
+            </h3>
+            <p class="text-gray-400">
+              Building a clear roadmap to amplify your brand's presence in the
+              digital age.
+            </p>
+            <div class="md:w1 mt-8 md:mt-5">
+              <img
+                src="https://i.postimg.cc/HnchqXmZ/NC-Logo2-TEXTURED-4.jpg"
+                alt="Creative team collaborating"
+                class="w-full rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="py-16 md:py-24">
+        <h2
+          class="text-4xl font-bold text-center mb-12"
+          style="color: #473915; font-weight: bold"
+        >
+          Our Demonstrated Experience
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Project Card 1 -->
+          <div
+            class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <img
+              src="https://i.postimg.cc/MH0f934z/Untitled-design-1.png"
+              alt="Careers Magazine cover"
+              class="w-full h-auto object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-custom-orange mb-2">
+                Careers Magazine
+              </h3>
+              <p class="text-gray-400">
+                We conceptualized and managed this nation-wide magazine focused
+                on youth career guidance in South Africa.
+              </p>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div
+            class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <img
+              src="https://i.postimg.cc/RqrJd5Gs/Untitled-design-3.png"
+              alt="Khuli Chana branding"
+              class="w-full h-auto object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-custom-orange mb-2">
+                Khuli Chana
+              </h3>
+              <p class="text-gray-400">
+                Commissioned by the renowned South African rapper to be his
+                brand architects, evolving his brand beyond music.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section id="process" class="py-16 md:py-24">
+        <h2
+          class="text-4xl font-bold text-center mb-12"
+          style="color: #473915; font-weight: bold"
+        >
+          Our Process
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div class="bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-custom-orange rounded-full mx-auto mb-4 text-3xl font-bold"
+            >
+              1
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">Client Analysis</h3>
+            <p class="text-gray-400">
+              We begin with an intricate process of client analysis and brand
+              audit to understand your needs and goals.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-custom-orange rounded-full mx-auto mb-4 text-3xl font-bold"
+            >
+              2
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">Strategy Formulation</h3>
+            <p class="text-gray-400">
+              Our trusted team formulates a customized strategy that aligns
+              perfectly with your brand mandate.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-custom-orange rounded-full mx-auto mb-4 text-3xl font-bold"
+            >
+              3
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">Strategy Implementation</h3>
+            <p class="text-gray-400">
+              We walk the journey with you, not just creating the strategy, but
+              also implementing it to achieve success.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-16 md:py-24 text-center">
+        <div class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-xl">
+          <h2
+            class="text-4xl font-bold mb-4"
+            style="color: #473915; font-weight: bold"
+          >
+            Let's Create Together
+          </h2>
+          <p class="text-lg text-gray-300 mb-8">
+            Ready to amplify your brand? Get in touch with us.
+          </p>
+          <a
+            href="mailto:info@nkokhelicreatives.com"
+            class="mt-8 inline-block px-8 py-4 bg-custom-orange text-white font-semibold rounded-full shadow-lg hover:bg-red-600 transition-colors"
+          >
+            Email Us
+          </a>
+          <p class="mt-6 text-gray-400">Johannesburg, South Africa</p>
+          <div class="mt-4 flex justify-center space-x-4">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-twitter"
+              >
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.5-.7 3.1-1.3 4-1.7-2.2.7-4.1 1-5.8 1.4"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-6 text-gray-500">
+      <p>&copy; 2025 Nkokheli Creatives. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
